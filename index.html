@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+</head>
+<body>
+    <div class="main">
+    <div class="centered">
+        <canvas id="canvas" style="border: 1px grey solid" width="600" height="600"></canvas>
+    </div>
+
+    <input id="x" type="number">
+    <input id="y" type="number">
+    <input id="z" type="number">
+    <input type="range" min="1" max="100" value="1" class="slider" id="radius">
+    <select name="color" id="color">
+        <option>Green</option>
+        <option>Red</option>
+        <option>Blue</option>
+    </select>
+    <button id="submit" type="button" onclick="addsphere()">Submit</button>
+
+    </div>
+    
+    <script src="./raytracer.js" type="text/javascript"></script>
+</body>
+</html>
